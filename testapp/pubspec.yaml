@@ -24,6 +24,5 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/diamond.png
-    - images/1.png
+    - images/
 
