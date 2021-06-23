@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +16,15 @@ class TestApp extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(
+                width: double.infinity,
+              ),
+              Text(
+                "Hello World",
+                style: TextStyle(fontSize: 26),
+              ),
               Text(
                 "Hello World",
                 style: TextStyle(fontSize: 26),
