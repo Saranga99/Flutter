@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 
-//starting point
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(TestApp());
+}
+
+class TestApp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          title: Center(
-            child: Text("I Am Rich"),
-          ),
-          backgroundColor: Colors.blueGrey[900],
-        ),
         body: Center(
-            child: Image(
-          image: AssetImage("images/diamond.png"),
-        )),
+          child: Text("Hello World"),
+        ),
+        appBar: AppBar(
+          title: Text("Test App"),
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
