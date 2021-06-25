@@ -29,8 +29,12 @@ class Home extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamed(About.routeName,arguments: AboutArguments(name: "Hi Brothers"));
+              onPressed: () async {
+                //enkn balan innwa , anthimta kata wahapan api dnnwa string ekk enne kyla
+                String text = await Navigator.of(context).pushNamed(
+                    About.routeName,
+                    arguments: AboutArguments(name: "Hi Brothers")) as String;
+                print(text);
               },
               child: Text("About Us"),
             )

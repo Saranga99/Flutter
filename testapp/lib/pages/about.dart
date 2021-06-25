@@ -31,12 +31,15 @@ class About extends StatelessWidget {
             SizedBox(
               width: double.infinity,
             ),
-            Text("About Us  ${args.name}",style: Theme.of(context).textTheme.headline4,),
+            Text(
+              "About Us  ${args.name}",
+              style: Theme.of(context).textTheme.headline4,
+            ),
             SizedBox(
               height: 100,
             ),
             ElevatedButton(
-                onPressed: () => {Navigator.of(context).pop(Home.routeName)},
+                onPressed: () => {Navigator.of(context).pop("from about")},
                 child: Text("Home"))
           ],
         ),
